@@ -5,8 +5,8 @@ package Static;
  */
 public class Main1 {
     public static void main(String[] args) {
-        Cat cat = new Cat("Cherry");
+//        Cat cat = new Cat("Cherry");
 //        System.out.println(cat.numbersOfCats);Можно но не желательно
-        System.out.println(Cat.numbersOfCats);
+        System.out.println(Cat.numbersOfCats);// Можно вызывать даже без создания экземпляра класса
     }
 }
