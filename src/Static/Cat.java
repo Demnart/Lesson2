@@ -11,8 +11,16 @@ public class Cat {
     static  int numbersOfCats; // Если же переменная обьявленна как стати она создаеться 1 раз за всю программу
     // и после этого может изменяться, однако она никогда не обнулится при вызове нового обьекта, она будет хранить те значения
     // которые были в нее помещены, Так же static переменная  не обрабатываеться GC!
-    {
+
+  static  {
+//        age = 2; Нельзя вызвать так как метод статический,а переменная не статическая
+      //
+        numbersOfCats =88;
+    }
+
+    {// Блок инициализации
         age = 10;
+        numbersOfCats =100;
     }
 
     public Cat(String name) {
@@ -24,6 +32,10 @@ public class Cat {
     }
     void ShowCats(){
         System.out.println(numbersOfCats);
+    }
+    public static void staticShowCats(){
+        System.out.println(numbersOfCats);
+//        show(); Так сделать не получится так как метод не статический!
     }
 
 }

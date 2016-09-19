@@ -8,5 +8,8 @@ public class Main1 {
 //        Cat cat = new Cat("Cherry");
 //        System.out.println(cat.numbersOfCats);Можно но не желательно
         System.out.println(Cat.numbersOfCats);// Можно вызывать даже без создания экземпляра класса
+        Cat.staticShowCats();
+//        cat.staticShowCats(); так делать не стоит так как статические переменные и методы
+        // вызываються через класс пример  Cat.staticShowCats(); или Cat.staticShowCats()
     }
 }
